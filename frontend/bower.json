@@ -1,0 +1,24 @@
+{
+  "name": "Artbeat",
+  "authors": [
+    "ilan hazan <ilaneliehazan@gmail.com>"
+  ],
+  "description": "mvp artbeat",
+  "main": "",
+  "moduleType": [],
+  "dependencies": {
+    "angular-resource": "^1.5.2",
+    "angular-jwt": "^0.0.9",
+    "angular-ui-router": "^0.2.18",
+    "moment": "^2.12.0"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/vendor",
+    "test",
+    "tests"
+  ]
+}

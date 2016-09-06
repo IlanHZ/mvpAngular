@@ -4,6 +4,7 @@ var cors = require('cors');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var app = express();
+var router = require('./config/routes');
 
 var mongoose = require('mongoose');
 

@@ -1,0 +1,11 @@
+<!-- Register -->
+<section class="register">
+  <h1>Register</h1>
+  <form class="registerForm" ng-submit="user.register()">
+    <input type="text" ng-model="user.currentUser.username" placeholder="Username">
+    <input type="text" ng-model="user.currentUser.email" placeholder="Email">
+    <input type="password" ng-model="user.currentUser.password" placeholder="Password">
+    <input type="password" ng-model="user.currentUser.passwordConfirmation" placeholder="Confirm Password">
+    <input type="submit" value="Register">
+  </form>
+</section>
