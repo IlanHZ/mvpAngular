@@ -3,7 +3,7 @@ angular
     .config(function($httpProvider, $stateProvider, $urlRouterProvider){
       // // InterceptorConfig
       // $httpProvider.interceptors.push('AuthInterceptor');
-
+      
       // Router config
       $stateProvider
           .state('lp', {
