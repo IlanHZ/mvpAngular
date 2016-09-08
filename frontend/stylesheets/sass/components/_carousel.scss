@@ -1,3 +1,5 @@
+@import "../base/colors";
+
 .containerCarousel {
     width: 100%;
 
@@ -14,7 +16,7 @@
             }
 
             .subtitle {
-                 color: black;
+                 color: $text-dark-grey;
             }
         }
     }

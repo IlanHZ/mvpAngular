@@ -4,11 +4,10 @@ nav {
   nav #logoNav {
     width: 15pc; }
   nav .loginLinks {
-    float: right;
-    color: blue; }
+    float: right; }
   nav #links {
     margin: 1pc;
-    color: black; }
+    color: #656868; }
   nav #links:hover {
     text-decoration: none; }
 
@@ -23,21 +22,27 @@ nav {
       .containerCarousel .item .carousel-caption .title {
         width: 30pc; }
       .containerCarousel .item .carousel-caption .subtitle {
-        color: black; }
+        color: #656868; }
 
 .containerHIW {
-  height: 200px;
+  height: 250px;
   margin-top: 15px;
-  margin-bottom: 15px;
   background-color: #f3fafe;
   text-align: center;
-  line-height: 200px; }
-  .containerHIW .containerHIW:hover {
-    background-color: red; }
+  line-height: 250px; }
   .containerHIW .hiw {
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
-    font-size: 40px; }
+    font-size: 40px;
+    color: #6b8789;
+    font-family: 'rafalebg'; }
+
+.containerPic {
+  margin-top: 15px; }
+  .containerPic .lpPicture {
+    display: block;
+    height: 500px;
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

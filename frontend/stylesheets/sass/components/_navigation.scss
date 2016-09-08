@@ -4,6 +4,7 @@
 nav { 
     margin-top: 0.5pc;  
     background-color: $ultra-light-blue;  
+    
 
     #logoNav {
       width: 15pc;    
@@ -11,12 +12,11 @@ nav {
 
     .loginLinks {
       float: right;
-      color: blue;
     }   
 
     #links {
       margin: 1pc;
-      color: black;
+      color: $text-dark-grey;
     }   
 
     #links:hover {
