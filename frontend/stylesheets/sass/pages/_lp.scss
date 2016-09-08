@@ -5,7 +5,7 @@
 .containerHIW {
     height: $s-container;
     margin-top: 15px;
-    background-color: #f3fafe;
+    background-color: $light-blue;
     text-align: center;
     line-height: $s-container;
 
@@ -31,6 +31,82 @@
         height: $m-container;
         width: 100%;
     }
+}
+
+.containerFundCollection {
+    margin-top: 15px;
+    background-color: $light-blue;
+    height: $xl-container;
+    position: relative;
+
+    .insideBox {
+        background-color:  $light-blue;;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 50%;
+        height: 75%;
+
+        .pic1 {
+            position:absolute;
+            width: 50%;
+            height: 50%;
+            left: 0;
+            top: 0;
+            padding: 0.5pc;
+        }
+
+        .pic2 {
+            position:absolute;
+            width: 50%;
+            height: 50%;
+            right: 0;
+            top: 0;
+            padding: 0.5pc;
+        }
+
+        .pic3 {
+            position:absolute;
+            width: 60%;
+            height: 50%;
+            bottom: 0;
+            left: 0;
+            padding: 0.5pc;
+        }
+
+        .pic4 {
+            position:absolute;
+            width: 32%;
+            height: 50%;
+            bottom: 0;
+            right: 0;
+            padding: 0.5pc;
+        }
+
+        .title {
+            z-index: 1;
+            position: relative;
+            width: 60%;
+            height: 33%;
+            background-color: red;
+            left: 22%;
+            top: 33%;
+            text-align: center; 
+            background-color: rgba(255,255,255,0.7);  
+            font-family: 'rafalebg';  
+            font-size: 52px;
+
+            p {
+                margin-top: 10px;
+                padding: 10px;
+            }
+        }
+
+
+    }
+
+    
 }
 
 
