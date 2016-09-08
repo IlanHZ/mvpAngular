@@ -1,0 +1,27 @@
+.containerCarousel {
+    width: 100%;
+
+    .item {
+        height: 600px;
+        width: 100%;
+
+        .carousel-caption {
+            top: 35%;
+            bottom: auto;
+
+            .title {
+                width: 30pc;
+            }
+
+            .subtitle {
+                 color: black;
+            }
+        }
+    }
+}
+
+
+
+
+
+

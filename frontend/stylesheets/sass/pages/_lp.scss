@@ -1,0 +1,26 @@
+@import "../base/colors";
+
+// HOW IT WORKS BOX
+.containerHIW {
+    height: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #f3fafe;
+    text-align: center;
+    line-height: 200px;
+
+    .containerHIW:hover {
+        background-color: red;
+    }
+
+    .hiw {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        font-size: 40px;    
+    }
+
+}
+
+
+

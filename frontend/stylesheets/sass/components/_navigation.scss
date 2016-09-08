@@ -1,0 +1,27 @@
+@import "../base/colors";
+
+
+nav { 
+    margin-top: 0.5pc;  
+    background-color: $ultra-light-blue;  
+
+    #logoNav {
+      width: 15pc;    
+    }   
+
+    .loginLinks {
+      float: right;
+      color: blue;
+    }   
+
+    #links {
+      margin: 1pc;
+      color: black;
+    }   
+
+    #links:hover {
+      text-decoration: none;
+    }
+}
+
+

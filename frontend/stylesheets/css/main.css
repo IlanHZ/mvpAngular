@@ -1,0 +1,43 @@
+nav {
+  margin-top: 0.5pc;
+  background-color: #f6fbfb; }
+  nav #logoNav {
+    width: 15pc; }
+  nav .loginLinks {
+    float: right;
+    color: blue; }
+  nav #links {
+    margin: 1pc;
+    color: black; }
+  nav #links:hover {
+    text-decoration: none; }
+
+.containerCarousel {
+  width: 100%; }
+  .containerCarousel .item {
+    height: 600px;
+    width: 100%; }
+    .containerCarousel .item .carousel-caption {
+      top: 35%;
+      bottom: auto; }
+      .containerCarousel .item .carousel-caption .title {
+        width: 30pc; }
+      .containerCarousel .item .carousel-caption .subtitle {
+        color: black; }
+
+.containerHIW {
+  height: 200px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #f3fafe;
+  text-align: center;
+  line-height: 200px; }
+  .containerHIW .containerHIW:hover {
+    background-color: red; }
+  .containerHIW .hiw {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 40px; }
+
+/*# sourceMappingURL=main.css.map */
