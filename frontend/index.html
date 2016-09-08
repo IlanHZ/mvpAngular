@@ -18,7 +18,9 @@
 
   <script src="js/app.js"></script>
   <script src="js/controllers/artworks.js"></script>
-  <script src="./js/factories/artwork.js"></script>
+  <script src="js/factories/artwork.js"></script>
+
+
 
 
   <!-- BOOTSTRAP -->
@@ -35,20 +37,24 @@
     <nav class="navbar-fixed-top" role="navigation">
         <a ui-sref-active="active" ui-sref="lp"><img src="/images/logoLarge.png" id="logoNav"></a>
         <span class="navLinks">
-            <a ui-sref-active="active" ui-sref="collection" id="links">collection</a>
-            <a ui-sref-active="active" ui-sref="exhibition" id="links">exhibition</a>
-            <a ui-sref-active="active" ui-sref="founders" id="links">founders</a>
-            <a ui-sref-active="active" ui-sref="myAccount" id="links">my account</a>
-            <a ui-sref-active="active" ui-sref="aboutUs" id="links">about us</a>
+            <a ui-sref-active="active" ui-sref="collection" id="links">Collection</a>
+            <a ui-sref-active="active" ui-sref="exhibition" id="links">Exhibition</a>
+            <a ui-sref-active="active" ui-sref="founders" id="links">Founders</a>
+            <a ui-sref-active="active" ui-sref="myAccount" id="links">My account</a>
+            <a ui-sref-active="active" ui-sref="aboutUs" id="links">About us</a>
             <span class="loginLinks">
-                <a ui-sref-active="active" ui-sref="login" id="links">log in</a>
-                <a ui-sref-active="active" ui-sref="register" id="links">register</a>
+                <a ui-sref-active="active" ui-sref="login" id="links">Log in</a>
+                <a ui-sref-active="active" ui-sref="register" id="links">Sign up</a>
                 <!-- <a ng-click="users.logout()">Logout</a> -->
             </span>
 
         </span>
     </nav>
+
+
+
   <main ui-view>
+
   </main>
 
 </body>

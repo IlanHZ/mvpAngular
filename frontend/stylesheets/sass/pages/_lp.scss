@@ -33,10 +33,10 @@
     }
 }
 
-.containerFundCollection {
+.containerSection {
     margin-top: 15px;
     background-color: $light-blue;
-    height: $xl-container;
+    height: $l-container;
     position: relative;
 
     .insideBox {
@@ -88,25 +88,72 @@
             z-index: 1;
             position: relative;
             width: 60%;
-            height: 33%;
+            height: 38%;
             background-color: red;
             left: 22%;
             top: 33%;
             text-align: center; 
             background-color: rgba(255,255,255,0.7);  
-            font-family: 'rafalebg';  
-            font-size: 52px;
 
-            p {
-                margin-top: 10px;
-                padding: 10px;
+            &:hover {
+                background-color: rgba(255,255,255,0.9);  
+                cursor: pointer;
             }
+
+            .content {
+                position: relative;
+                font-family: 'rafalebg';  
+                top: 14%;
+                font-size: 46px;
+
+            }
+        }
+    }
+}
+
+.nextCollection {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 70%;
+
+    .text {
+        font-family: 'rafalebg';  
+        position: absolute;
+        width: 30%;
+        left: 10%;
+        top: 9%;
+
+        .title {
+            font-size: $l-font;
         }
 
 
+        ul {
+            list-style: none;
+
+            li {
+                font-size: 15px;
+                margin: 15px 0;
+            }
+        }
     }
 
-    
+    .picture {
+        width: 70%;
+        height: 100%;
+        right: 0;
+        position: absolute;
+    }
+}
+
+.artistsTitle {
+    font-size: $l-font;
+    font-family: 'rafalebg';  
+    text-align: center;
+    color: $text-grey;
 }
 
 

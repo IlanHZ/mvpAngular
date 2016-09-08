@@ -11,7 +11,7 @@ nav {
     }   
 
     .loginLinks {
-      float: right;
+
     }   
 
     #links {
@@ -21,6 +21,7 @@ nav {
 
     #links:hover {
       text-decoration: none;
+      color: $primary-yellow;
     }
 }
 
