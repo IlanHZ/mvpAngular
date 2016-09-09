@@ -1,5 +1,6 @@
 @import "../base/colors";
 @import "../helpers/variables";
+@import "../base/typography";
 
 // HOW IT WORKS BOX
 .containerHIW {
@@ -19,7 +20,7 @@
         line-height: normal;
         font-size: 40px;  
         color: $text-grey;
-        font-family: 'rafalebg';  
+        font-family: $title-typo;  
     }
 }
 

@@ -1,5 +1,6 @@
 //base
 @import "base/colors";
+@import "base/typography";
 // components
 @import "components/navigation";
 @import "components/carousel";
@@ -10,4 +11,9 @@
 //pages
 @import "pages/lp";
 
+
+
+* {
+  font-family: $title-typo;
+}
 

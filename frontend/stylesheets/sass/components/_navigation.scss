@@ -2,9 +2,7 @@
 
 
 nav { 
-    margin-top: 0.5pc;  
-    background-color: $ultra-light-blue;  
-    
+    background-color: rgba(255,255,255,0.8);  
 
     #logoNav {
       width: 15pc;    
@@ -21,7 +19,7 @@ nav {
 
     #links:hover {
       text-decoration: none;
-      color: $primary-yellow;
+      color: $text-grey;
     }
 }
 

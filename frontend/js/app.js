@@ -1,8 +1,7 @@
 angular
     .module('Artbeat', ['ngResource', 'ui.router'])
     .config(function($httpProvider, $stateProvider, $urlRouterProvider){
-      // // InterceptorConfig
-      // $httpProvider.interceptors.push('AuthInterceptor');
+
       
       // Router config
       $stateProvider

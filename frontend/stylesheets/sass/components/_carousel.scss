@@ -8,7 +8,32 @@
         width: 100%;
 
         .carousel-caption {
-            top: 35%;
+            top: 18%;
+            bottom: auto;
+
+            .title {
+                width: 45pc;
+            }
+
+            .subtitle {
+                 color: black;
+            }
+        }
+    }
+}
+
+.artitstsCarousel {
+    width: 80%;
+    position: relative;
+
+
+    .item {
+        position: absolute;
+        height:40%;
+        width: 60%;
+
+        .carousel-caption {
+            top: 18%;
             bottom: auto;
 
             .title {
