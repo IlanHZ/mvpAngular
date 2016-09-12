@@ -25,17 +25,12 @@ nav {
 .artitstsCarousel {
   width: 80%;
   position: relative; }
-  .artitstsCarousel .item {
-    position: absolute;
-    height: 40%;
-    width: 60%; }
-    .artitstsCarousel .item .carousel-caption {
-      top: 18%;
-      bottom: auto; }
-      .artitstsCarousel .item .carousel-caption .title {
-        width: 45pc; }
-      .artitstsCarousel .item .carousel-caption .subtitle {
-        color: black; }
+  .artitstsCarousel .carousel-inner .rightCarousel {
+    width: 50%;
+    position: absolute; }
+  .artitstsCarousel .carousel-inner .leftCarousel {
+    width: 50%;
+    position: absolute; }
 
 .footer {
   padding: 1rem;

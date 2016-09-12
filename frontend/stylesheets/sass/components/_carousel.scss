@@ -26,25 +26,19 @@
     width: 80%;
     position: relative;
 
+    .carousel-inner {
 
-    .item {
-        position: absolute;
-        height:40%;
-        width: 60%;
+        .rightCarousel {
+            width: 50%;
+            position: absolute;
+        }
 
-        .carousel-caption {
-            top: 18%;
-            bottom: auto;
-
-            .title {
-                width: 45pc;
-            }
-
-            .subtitle {
-                 color: black;
-            }
+        .leftCarousel {
+            width: 50%;
+            position: absolute;
         }
     }
+
 }
 
 
