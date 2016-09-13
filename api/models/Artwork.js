@@ -1,10 +1,10 @@
-var mongoose = require('mongoose');
+var mongoose = require("mongoose");
 
-var ArtworkSchema = mongoose.Schema({
-	name: String,
-  location: String,
-	artist: String
+var artworkSchema = mongoose.Schema({
+  title: { type: String, required: true },
+  description: String,
+  github: String,
+  website: String
 });
 
-module.exports = mongoose.model('Artwork', ArtworkSchema);
-
+module.exports = mongoose.model('Artwork', artworkSchema);

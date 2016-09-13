@@ -3,46 +3,35 @@ var mongoose = require("mongoose");
 var databaseURL = 'mongodb://localhost:27017/artbeat';
 mongoose.connect(databaseURL);
 
-var Criminal = require('../models/criminal');
+var Artwork = require("../models/artwork");
+var User    = require("../models/user");
 
-var criminal1 = new Criminal({
-  name: "Al Capone",
-  location: "New York",
-  status: "Dead"
-});
+// Users
 
-criminal1.save();
+var user1 = new User({
+  name: "Vince Lynch",
+  github: "error25",
+  bio: "Derren Brown got nothing on me",
+  portfolio: "http://www.vincelynch.com",
+})
 
-var criminal2 = new Criminal({
-  name: "Ronald Kray",
-  location: "Hoxton",
-  status: "Dead"
-});
+user1.save(function(err, user) {
+ if (err) return console.log(err);
+ console.log("User saved! ", user);
+})
 
-criminal2.save();
 
-var criminal3 = new Criminal({
-  name: "Charles Bronson",
-  location: "Luton",
-  status: "Alive"
-});
+// Artwork
 
-criminal3.save();
+var artwork1 = new Artwork({
+  title: "Third Act",
+  description: "description of the project",
+  github: "thirdAct",
+  website: "http://www.thirdAct.com"
+})
 
-var criminal4 = new Criminal({
-  name: "Jordan Belfort",
-  location: "Queens",
-  status: "Alive"
-});
 
-criminal4.save();
-
-var criminal5 = new Criminal({
-  name: "Joseph Kony",
-  location: "Uganda",
-  status: "Unknown"
-});
-
-criminal5.save();
-
-console.log("Successfully seeded data");
+artwork1.save(function(err, artwork) {
+ if (err) return console.log(err);
+ console.log("Artwork saved! ", artwork);
+})

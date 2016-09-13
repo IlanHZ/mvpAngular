@@ -1,3 +1,70 @@
 <section class="collection">
   <h1>Collection</h1>
+  <div ng-controller="ArtworksController as artworks">
+
+    <ul ng-repeat="artwork in artworks.all">
+      {{ artwork.title }} <br>
+      {{ artwork.description }} <br> 
+      {{ artwork.github }} <br> 
+      {{ artwork.website }} <br> 
+
+      <button class="btn btn-default" ng-click="artwork.isEditing=true">Edit</button>
+      <button class="btn btn-primary" ng-click="artworks.deleteArtwork(project)">Delete</button>
+
+    </ul>
+  </div>
+
+  <div ng-controller="UsersController as users">
+
+  <form class="add-user" ng-submit="users.addUser()" >
+    <div class="form-group">
+      <label for="new-user-name">User's Name</label>
+      <input type="text" class="form-control" id="new-user-name" placeholder="Name" ng-model='users.newUser.name'></input>
+    </div>
+    <div class="form-group">
+      <label for="new-user-github">User's github</label>
+      <input type="text" class="form-control" id="new-user-github" placeholder="github" ng-model='users.newUser.github'></input>
+    </div>
+    <div class="form-group">
+      <label for="new-user-bio">User's bio</label>
+      <input type="text" class="form-control" id="new-user-bio" placeholder="bio" ng-model='users.newUser.bio'></input>
+    </div>
+    <div class="form-group">
+      <label for="new-user-portfolio">User's portfolio</label>
+      <input type="text" class="form-control" id="new-user-portfolio" placeholder="portfolio" ng-model='users.newUser.portfolio'></input>
+    </div>
+    <div>
+      <input type="submit" id="submit" class="btn btn-default" value="Save">
+    </div>
+  </form>
+
+    <ul class="col-md-4" ng-repeat="user in users.all">
+
+
+      <form ng-if="user.isEditing" ng-submit="users.updateUser(user)">
+        <input type="text" name="name" placeholder="Name" ng-model="user.name">
+        <input type="text" name="github" placeholder="github" ng-model="user.github">
+        <input type="text" name="bio" placeholder="bio" ng-model="user.bio">
+        <input type="text" name="portfolio" placeholder="portfolio" ng-model="user.portfolio">
+        <button>Update</button>
+        <button ng-click="user.isEditing=false">Cancel</button>
+      </form>
+
+       <div ng-if="!user.isEditing">
+
+         {{ user.name }} <br>
+         {{ user.github}} <br> 
+         {{ user.bio }} <br> 
+         {{ user.portfolio }} <br>
+
+         <button class="btn btn-default" ng-click="user.isEditing=true">Edit</button>
+         <button class="btn btn-primary" ng-click="users.deleteUser(user)">Delete</button>
+
+       </div>
+
+    </ul>
+
+  </div>
+
+
 </section>

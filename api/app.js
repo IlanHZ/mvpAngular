@@ -1,23 +1,33 @@
-var express = require('express');
-var path = require('path');
-var cors = require('cors');
-var logger = require('morgan');
-var bodyParser = require('body-parser');
-var app = express();
-var router = require('./config/routes');
+// Require packages
+var express        = require('express');
+var cors           = require('cors');
+var bodyParser     = require('body-parser');
+var morgan         = require('morgan');
+var mongoose       = require('mongoose');
+var methodOverride = require('method-override');
+var app            = express();
 
-var mongoose = require('mongoose');
+// Setup database
+var databaseURL    = 'mongodb://localhost:27017/artbeat';
+mongoose.connect(databaseURL);
 
-mongoose.connect('mongodb://localhost:27017/artbeat');
+// Require routes
+var routes         = require('./config/routes');
 
-var routes = require('./config/routes');
-
+// Setup Middleware
 app.use(cors());
-
-app.use(logger('dev'));
+app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use(methodOverride(function(req, res){
+  if (req.body && typeof req.body === "object" && "_method" in req.body){
+    var method = req.body._method;
+    delete req.body._method;
+    return method;
+  }
+}));
 app.use(routes);
 
-app.listen(3000);
+// Listen on the correct PORT
+app.listen(process.env.PORT || 3000);
+console.log("Express is alive and listening.")
