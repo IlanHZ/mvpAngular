@@ -10,7 +10,6 @@ function ArtworksController($http){
   this.newArtwork = {};
 
 
-
   // GET
     function getArtwork() {
       $http

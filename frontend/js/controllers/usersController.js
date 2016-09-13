@@ -1,5 +1,5 @@
 angular.module('Artbeat')
-  .controller('UsersController', UsersController)
+  .controller('UsersController', UsersController);
 
 
 UsersController.$inject = ['$http'];
@@ -53,6 +53,7 @@ function updateUser(user) {
 
   getUser();
 
+
 // ADD
   function addUser() {
     console.log("submit clicked")
@@ -64,7 +65,6 @@ function updateUser(user) {
         
       });
   }
-
 }
 
 

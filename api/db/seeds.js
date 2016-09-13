@@ -1,6 +1,8 @@
 var mongoose = require("mongoose");
 
+// mongoose.Promise = global.Promise;
 var databaseURL = 'mongodb://localhost:27017/artbeat';
+mongoose.Promise = global.Promise;
 mongoose.connect(databaseURL);
 
 var Artwork = require("../models/artwork");

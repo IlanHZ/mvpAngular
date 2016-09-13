@@ -1,4 +1,5 @@
 var Artwork = require("../models/artwork");
+var User = require("../models/user");
 
 function artworksIndex(req, res){
   Artwork.find({}, function(err, artworks) {
