@@ -23,10 +23,59 @@
                 <input type="text" class="form-control" id="new-artwork-title" placeholder="Name" ng-model='artworks.newArtwork.title'>
             </div>
         </form>
-        <ul class="col-md-4" ng-repeat="artwork in artworks.all">
-                {{ artwork.title }} <br>
-                <button class="btn btn-primary" ng-click="artworks.deleteArtwork(artwork)">Delete</button>
-        </ul>
+    
+
+            <div class="row" ng-repeat="artwork in artworks.all">
+                <div class="col-lg-3 col-xs-12 col-md-3">
+                    <div class="thumbnail">
+                        {{ artwork.title }} 
+                        {{ artwork.artist }} 
+                        <img src="/images/{{ artwork.image }}"> 
+                        {{ artwork.size }} 
+                        {{ artwork.description }} 
+                        {{ artwork.date }} 
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xs-12 col-md-4">
+                    <div class="thumbnail">
+                         {{ artwork.title }} 
+                         {{ artwork.artist }} 
+                         <img src="/images/{{ artwork.image }}"> 
+                         {{ artwork.size }} 
+                         {{ artwork.description }} 
+                         {{ artwork.date }} 
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xs-12 col-md-4">
+                    <div class="thumbnail">
+                        {{ artwork.title }} 
+                        {{ artwork.artist }} 
+                        <img src="/images/{{ artwork.image }}"> 
+                        {{ artwork.size }} 
+                        {{ artwork.description }} 
+                        {{ artwork.date }} 
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xs-12 col-md-4">
+                    <div class="thumbnail">
+                        {{ artwork.title }} 
+                        {{ artwork.artist }} 
+                        <img src="/images/{{ artwork.image }}"> 
+                        {{ artwork.size }} 
+                        {{ artwork.description }} 
+                        {{ artwork.date }} 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+                {{ artwork.title }} 
+                {{ artwork.artist }} 
+                <img src="/images/{{ artwork.image }}"> 
+                {{ artwork.size }} 
+                {{ artwork.description }} 
+                {{ artwork.date }} 
+        </div>
     </div>
 
 

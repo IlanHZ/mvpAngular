@@ -26,10 +26,12 @@ user1.save(function(err, user) {
 // Artwork
 
 var artwork1 = new Artwork({
-  title: "Third Act",
-  description: "description of the project",
-  github: "thirdAct",
-  website: "http://www.thirdAct.com"
+  title: 'Filles',
+  image: 'MOLET_Pauline_filles.jpg',
+  artist: 'Pauline Molet',
+  date: 2010-05-01,
+  size: '50X50',
+  description: 'lorem ipsum'
 })
 
 
@@ -37,3 +39,18 @@ artwork1.save(function(err, artwork) {
  if (err) return console.log(err);
  console.log("Artwork saved! ", artwork);
 })
+
+// var artwork2 = new Artwork({
+//   title: 'Filles',
+//   image: 'MOLET_Pauline_marine.jpg',
+//   artist: 'Pauline Molet',
+//   date: 11/02/2016,
+//   size: '50X50',
+//   description: 'lorem ipsum'
+// })
+
+
+// artwork2.save(function(err, artwork) {
+//  if (err) return console.log(err);
+//  console.log("Artwork saved! ", artwork);
+// })
