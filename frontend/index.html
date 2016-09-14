@@ -37,20 +37,32 @@
 </head>
 <body ng-app="Artbeat">
     <nav class="navbar-fixed-top" role="navigation">
-        <a ui-sref-active="active" ui-sref="lp"><img src="/images/logoLarge.png" id="logoNav"></a>
-        <span class="navLinks">
-            <a ui-sref-active="active" ui-sref="collection" id="links">Collection</a>
-            <a ui-sref-active="active" ui-sref="exhibition" id="links">Exhibition</a>
-            <a ui-sref-active="active" ui-sref="founders" id="links">Founders</a>
-            <a ui-sref-active="active" ui-sref="myAccount" id="links">My account</a>
-            <a ui-sref-active="active" ui-sref="aboutUs" id="links">About us</a>
-            <span class="loginLinks">
-                <a ui-sref-active="active" ui-sref="login" id="links">Log in</a>
-                <a ui-sref-active="active" ui-sref="register" id="links">Sign up</a>
-                <!-- <a ng-click="users.logout()">Logout</a> -->
-            </span>
+      <div class="container">
+        <div class="navbar-header">
+          <a ui-sref-active="active" ui-sref="lp" >
+            <img class="navbar-brand" alt="Brand" src="/images/logoLarge.png">
+          </a>
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+          <span class="sr-only">Toggle navigation</span>
+            <i class="icon-bar"></i>
+            <i class="icon-bar"></i>
+            <i class="icon-bar"></i>
+        </button>
+        </div>
+        <div class="collapse navbar-collapse navHeaderCollapse">
 
-        </span>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a ui-sref-active="active" ui-sref="collection">Collection</a></li>
+              <li><a ui-sref-active="active" ui-sref="exhibition">Exhibition</a></li>
+              <li><a ui-sref-active="active" ui-sref="founders">Founders</a></li>
+              <li><a ui-sref-active="active" ui-sref="myAccount">My account</a></li>
+              <li><a ui-sref-active="active" ui-sref="aboutUs">About us</a></li>
+              <li><a ui-sref-active="active" ui-sref="login">Log in</a></li>
+              <li><a ui-sref-active="active" ui-sref="register">Sign up</a></li>
+                  <!-- <a ng-click="users.logout()">Logout</a> -->
+          </ul>
+        </div>
+      </div>
     </nav>
 
 

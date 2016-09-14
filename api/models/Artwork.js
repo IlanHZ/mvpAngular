@@ -4,7 +4,7 @@ var artworkSchema = mongoose.Schema({
   title: { type: String, required: true },
   image: String,
   artist: String,
-  date: Date,
+  date: String,
   size: String,
   description: String
 });

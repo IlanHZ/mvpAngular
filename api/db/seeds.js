@@ -29,7 +29,7 @@ var artwork1 = new Artwork({
   title: 'Filles',
   image: 'MOLET_Pauline_filles.jpg',
   artist: 'Pauline Molet',
-  date: 2010-05-01,
+  date: "2015",
   size: '50X50',
   description: 'lorem ipsum'
 })

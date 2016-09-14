@@ -1,13 +1,14 @@
 nav {
-  background-color: rgba(255, 255, 255, 0.8); }
-  nav #logoNav {
-    width: 15pc; }
-  nav #links {
-    margin: 1pc;
-    color: #656868; }
-  nav #links:hover {
-    text-decoration: none;
-    color: #6b8789; }
+  background-color: rgba(255, 255, 255, 0.9); }
+
+.navbar-brand {
+  width: 150px; }
+
+.icon-bar {
+  color: red; }
+
+.navbar-toggle .icon-bar {
+  background-color: black; }
 
 .containerCarousel {
   width: 100%; }
@@ -154,5 +155,8 @@ nav {
 
 * {
   font-family: "rafalebg"; }
+
+.sectionTitle {
+  margin-top: 10%; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,82 +1,27 @@
-<section class="collection">
-    <h1>Collection</h1>
+<section class="collection" ng-controller="ArtworksController as artworks">
+    <div class="sectionTitle">Collection</div>
 
-    <!-- <div ng-controller="UsersController as users">
-
-        <form class="add-user" ng-submit="users.addUser()">
-            <div class="form-group">
-                <label for="new-user-name">User's Name</label>
-                <input type="text" class="form-control" id="new-user-name" placeholder="Name" ng-model='users.newUser.name'>
+        <div class="row" ng-repeat="artwork in artworks.all">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/images/{{ artwork.image }}"> 
+                    <div class="caption">
+                        <h3> {{ artwork.title }} </h3>
+                        <p> {{ artwork.artist }}  </p>
+                        <p> {{ artwork.date }} </p>
+                    </div>
+                </div>
             </div>
-        </form>
-        <ul class="col-md-4" ng-repeat="user in users.all">
-                {{ user.name }} <br>
-                <button class="btn btn-primary" ng-click="users.deleteUser(user)">Delete</button>
-        </ul>
-    </div> -->
-
-    <div ng-controller="ArtworksController as artworks">
-
-        <form class="add-artwork" ng-submit="artworks.addArtwork()">
-            <div class="form-group">
-                <label for="new-artwork-title">Artworks title</label>
-                <input type="text" class="form-control" id="new-artwork-title" placeholder="Name" ng-model='artworks.newArtwork.title'>
-            </div>
-        </form>
-    
-
-            <div class="row" ng-repeat="artwork in artworks.all">
-                <div class="col-lg-3 col-xs-12 col-md-3">
-                    <div class="thumbnail">
-                        {{ artwork.title }} 
-                        {{ artwork.artist }} 
-                        <img src="/images/{{ artwork.image }}"> 
-                        {{ artwork.size }} 
-                        {{ artwork.description }} 
-                        {{ artwork.date }} 
-                    </div>
-                </div>
-                <div class="col-lg-3 col-xs-12 col-md-4">
-                    <div class="thumbnail">
-                         {{ artwork.title }} 
-                         {{ artwork.artist }} 
-                         <img src="/images/{{ artwork.image }}"> 
-                         {{ artwork.size }} 
-                         {{ artwork.description }} 
-                         {{ artwork.date }} 
-                    </div>
-                </div>
-                <div class="col-lg-3 col-xs-12 col-md-4">
-                    <div class="thumbnail">
-                        {{ artwork.title }} 
-                        {{ artwork.artist }} 
-                        <img src="/images/{{ artwork.image }}"> 
-                        {{ artwork.size }} 
-                        {{ artwork.description }} 
-                        {{ artwork.date }} 
-                    </div>
-                </div>
-                <div class="col-lg-3 col-xs-12 col-md-4">
-                    <div class="thumbnail">
-                        {{ artwork.title }} 
-                        {{ artwork.artist }} 
-                        <img src="/images/{{ artwork.image }}"> 
-                        {{ artwork.size }} 
-                        {{ artwork.description }} 
-                        {{ artwork.date }} 
-                    </div>
-                </div>
-
-            </div>
-        </div>
-                {{ artwork.title }} 
-                {{ artwork.artist }} 
-                <img src="/images/{{ artwork.image }}"> 
-                {{ artwork.size }} 
-                {{ artwork.description }} 
-                {{ artwork.date }} 
         </div>
     </div>
+            {{ artwork.title }} 
+            {{ artwork.artist }} 
+            <img src="/images/{{ artwork.image }}"> 
+            {{ artwork.size }} 
+            {{ artwork.description }} 
+            {{ artwork.date }} 
+    </div>
+
 
 
 

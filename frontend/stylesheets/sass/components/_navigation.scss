@@ -2,25 +2,40 @@
 
 
 nav { 
-    background-color: rgba(255,255,255,0.8);  
+    background-color: rgba(255,255,255,0.9);  
+  }
 
-    #logoNav {
-      width: 15pc;    
-    }   
 
-    .loginLinks {
+//     #logoNav {
+//       width: 15pc;    
+//     }   
 
-    }   
+//     .loginLinks {
 
-    #links {
-      margin: 1pc;
-      color: $text-dark-grey;
-    }   
+//     }   
 
-    #links:hover {
-      text-decoration: none;
-      color: $text-grey;
-    }
+    // #links {
+    //   margin: 1pc;
+    //   color: $text-dark-grey;
+    // }   
+
+//     #links:hover {
+//       text-decoration: none;
+//       color: $text-grey;
+//     }
+// }
+
+.navbar-brand {
+  width: 150px;
 }
 
+.icon-bar {
+  color: red;
+}
 
+.navbar-toggle {
+
+    .icon-bar {
+      background-color: black;
+    }
+}

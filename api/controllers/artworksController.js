@@ -3,7 +3,7 @@ var User = require("../models/user");
 
 function artworksIndex(req, res){
   Artwork.find({}, function(err, artworks) {
-    if (err) return res.status(404).send(err);
+    if (err) return res.status(400).send(err);
     res.status(200).send(artworks);
   });
 }
