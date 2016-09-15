@@ -40,17 +40,17 @@ artwork1.save(function(err, artwork) {
  console.log("Artwork saved! ", artwork);
 })
 
-// var artwork2 = new Artwork({
-//   title: 'Filles',
-//   image: 'MOLET_Pauline_marine.jpg',
-//   artist: 'Pauline Molet',
-//   date: 11/02/2016,
-//   size: '50X50',
-//   description: 'lorem ipsum'
-// })
+var artwork2 = new Artwork({
+  title: 'Fakir',
+  image: 'NB-Fakir1.jpg',
+  artist: 'Pauline Molet',
+  date: 11/02/2016,
+  size: '50X50',
+  description: 'lorem ipsum'
+})
 
 
-// artwork2.save(function(err, artwork) {
-//  if (err) return console.log(err);
-//  console.log("Artwork saved! ", artwork);
-// })
+artwork2.save(function(err, artwork) {
+ if (err) return console.log(err);
+ console.log("Artwork saved! ", artwork);
+})

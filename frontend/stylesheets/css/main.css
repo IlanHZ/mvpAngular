@@ -1,14 +1,62 @@
 nav {
   background-color: rgba(255, 255, 255, 0.9); }
+  nav .navbar-nav li a {
+    line-height: 50px;
+    text-decoration: none;
+    color: #6b8789; }
+  nav .navbar-brand {
+    height: 80px;
+    width: 200px; }
+  nav .navbar-toggle .icon-bar {
+    background-color: black; }
 
-.navbar-brand {
-  width: 150px; }
-
-.icon-bar {
-  color: red; }
-
-.navbar-toggle .icon-bar {
-  background-color: black; }
+.footer {
+  position: relative !important;
+  margin-top: 3pc;
+  background-color: #f6fbfb !important; }
+  .footer .footerLink {
+    margin-bottom: 0px !important; }
+  .footer ul li {
+    display: inline-block; }
+    .footer ul li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #6b8789;
+      background-color: #f6fbfb !important; }
+    .footer ul li a:hover {
+      color: #656868; }
+  .footer ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0; }
+  .footer ul.social-network li {
+    display: inline;
+    margin: 0 5px; }
+  .footer .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #6b8789; }
+  .footer .social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    color: #6b8789; }
+  .footer .social-circle i {
+    color: #6b8789;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s; }
 
 .containerCarousel {
   width: 100%; }

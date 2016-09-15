@@ -1,41 +1,100 @@
 @import "../base/colors";
 
+// Navbar
 
 nav { 
     background-color: rgba(255,255,255,0.9);  
-  }
 
+    .navbar-nav li a {
 
-//     #logoNav {
-//       width: 15pc;    
-//     }   
+        line-height: 50px;
+        text-decoration: none;
+        color: $text-grey;
 
-//     .loginLinks {
+    }
 
-//     }   
+    .navbar-brand {
+        height: 80px;
+        width: 200px;
+    }
 
-    // #links {
-    //   margin: 1pc;
-    //   color: $text-dark-grey;
-    // }   
+    .navbar-toggle {
 
-//     #links:hover {
-//       text-decoration: none;
-//       color: $text-grey;
-//     }
-// }
-
-.navbar-brand {
-  width: 150px;
-}
-
-.icon-bar {
-  color: red;
-}
-
-.navbar-toggle {
-
-    .icon-bar {
-      background-color: black;
+        .icon-bar {
+            background-color: black;
+        }
     }
 }
+
+// Footer
+
+.footer {
+    position: relative !important;
+    margin-top: 3pc;
+    background-color: $ultra-light-blue !important;
+
+    .footerLink {
+        margin-bottom: 0px !important;
+    }
+
+    ul {
+        li {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $text-grey;
+                background-color: $ultra-light-blue !important;
+
+            }
+
+            a:hover {
+                color: $text-dark-grey;
+            }
+        }
+    }
+
+    ul.social-network {
+        list-style: none;
+        display: inline;
+        margin-left:0 !important;
+        padding: 0;
+    }
+    ul.social-network li {
+        display: inline;
+        margin: 0 5px;
+
+    }
+
+    .social-circle li a {
+        display:inline-block;
+        position:relative;
+        margin:0 auto 0 auto;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        border-radius:50%;
+        text-align:center;
+        width: 50px;
+        height: 50px;
+        font-size:20px;
+        border: 1px solid $text-grey;
+    }
+
+    .social-circle li i {
+        margin:0;
+        line-height:50px;
+        text-align: center;
+        color: $text-grey;
+    }
+
+    .social-circle i {
+        color: $text-grey;
+        -webkit-transition: all 0.8s;
+        -moz-transition: all 0.8s;
+        -o-transition: all 0.8s;
+        -ms-transition: all 0.8s;
+        transition: all 0.8s;
+    }
+}
+
