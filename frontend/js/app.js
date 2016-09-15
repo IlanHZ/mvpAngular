@@ -37,6 +37,10 @@ angular
             url: '/myAccount/:id',
             templateUrl: 'views/myAccount.html'
           })
+          .state('artists', {
+            url: '/artists/:id',
+            templateUrl: 'views/artists.html'
+          })
 
       // This sets the url to /#/
       $urlRouterProvider.otherwise('/');

@@ -201,6 +201,36 @@ nav {
   text-align: center;
   color: #6b8789; }
 
+.artistsTitle {
+  font-size: 33px;
+  float: left;
+  background-color: #85a7a9;
+  width: 100%;
+  color: #231f20;
+  margin-bottom: 0px; }
+
+.artistPage {
+  border-left: 10pc solid #fff101;
+  height: 1000px;
+  position: relative; }
+  .artistPage .artistBox {
+    position: relative;
+    left: -75px;
+    top: 56px;
+    width: 67%;
+    height: 215px;
+    background-color: red; }
+    .artistPage .artistBox .picture {
+      position: absolute;
+      width: 25%;
+      height: 80%;
+      background-color: green; }
+    .artistPage .artistBox .artwork {
+      position: absolute;
+      width: 45%;
+      height: 75%;
+      background-color: blue; }
+
 * {
   font-family: "rafalebg"; }
 

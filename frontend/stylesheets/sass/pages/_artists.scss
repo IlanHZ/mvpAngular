@@ -1,0 +1,44 @@
+@import "../base/colors";
+@import "../helpers/variables";
+@import "../base/typography";
+
+
+.artistsTitle {
+  font-size: 33px;
+  float: left;
+  background-color: $square-logo-grey;
+  width: 100%;
+  color: $text-black;
+  margin-bottom: 0px;
+}
+
+
+.artistPage {
+  border-left: 10pc solid $primary-yellow;
+  height: 1000px;
+  position: relative;
+
+  .artistBox {
+    position: relative;
+    left: -75px;
+    top: 56px;
+    width: 67%;
+    height: 215px;
+    background-color: red;
+
+    .picture {
+      position: absolute;
+      width: 25%;
+      height: 80%;
+      background-color: green;
+
+    }
+
+    .artwork {
+      position: absolute;
+      width: 45%;
+      height: 75%;
+      background-color: blue;
+    }
+  }
+}
