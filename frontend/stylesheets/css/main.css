@@ -205,7 +205,6 @@ nav {
   font-size: 33px;
   float: left;
   background-color: #85a7a9;
-  width: 100%;
   color: #231f20;
   margin-bottom: 0px; }
 
@@ -217,7 +216,6 @@ nav {
     position: relative;
     left: -75px;
     top: 56px;
-    width: 67%;
     height: 215px;
     background-color: red; }
     .artistPage .artistBox .picture {
