@@ -3,22 +3,22 @@ var bodyParser = require('body-parser'); //parses information from POST
 var methodOverride = require('method-override'); //used to manipulate POST
 // var jwt = require('jsonwebtoken');
 
-var usersController = require('../controllers/usersController');
+var artistsController = require('../controllers/artistsController');
 var artworksController = require('../controllers/artworksController');
 
 
-// Users
+// artists
 router.route('/')
-  .get(usersController.usersIndex)
+  .get(artistsController.artistsIndex)
  
-router.route('/users')
-  .get(usersController.usersIndex)
-  .post(usersController.usersCreate)
+router.route('/artists')
+  .get(artistsController.artistsIndex)
+  .post(artistsController.artistsCreate)
 
-router.route('/users/:id') 
-  .get(usersController.usersShow)
-  .patch(usersController.usersUpdate)
-  .delete(usersController.usersDelete)
+router.route('/artists/:id') 
+  .get(artistsController.artistsShow)
+  .patch(artistsController.artistsUpdate)
+  .delete(artistsController.artistsDelete)
 
 // Artworks  
 

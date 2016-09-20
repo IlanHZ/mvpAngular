@@ -6,20 +6,17 @@ mongoose.Promise = global.Promise;
 mongoose.connect(databaseURL);
 
 var Artwork = require("../models/artwork");
-var User    = require("../models/user");
+var Artist    = require("../models/artist");
 
-// Users
+// Artists
 
-var user1 = new User({
+var artist1 = new Artist({
   name: "Vince Lynch",
-  github: "error25",
-  bio: "Derren Brown got nothing on me",
-  portfolio: "http://www.vincelynch.com",
 })
 
-user1.save(function(err, user) {
+artist1.save(function(err, artist) {
  if (err) return console.log(err);
- console.log("User saved! ", user);
+ console.log("Artist saved! ", artist);
 })
 
 
@@ -54,3 +51,5 @@ artwork2.save(function(err, artwork) {
  if (err) return console.log(err);
  console.log("Artwork saved! ", artwork);
 })
+
+

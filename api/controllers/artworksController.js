@@ -1,5 +1,5 @@
 var Artwork = require("../models/artwork");
-var User = require("../models/user");
+var User = require("../models/artist");
 
 function artworksIndex(req, res){
   Artwork.find({}, function(err, artworks) {
@@ -12,10 +12,10 @@ function artworksCreate(req, res){
   var artwork = new Artwork(req.body.artwork);
   artwork.save(function(err){
     if (err) return res.status(500).send(err);
-    var name = req.body.artwork.user;
-    User.findOne({ name: name }, function(err, user){
-      user.artworks.push(artwork);
-      user.save(function(err, user) {
+    var name = req.body.artwork.artist;
+    User.findOne({ name: name }, function(err, artist){
+      artist.artworks.push(artwork);
+      artist.save(function(err, artist) {
         res.status(201).send(artwork);
       });
     });
