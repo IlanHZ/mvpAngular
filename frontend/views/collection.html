@@ -1,24 +1,15 @@
 <section class="collection" ng-controller="ArtworksController as artworks">
     <div class="sectionTitle">Collection</div>
-
-        <div class="row" ng-repeat="artwork in artworks.all">
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="/images/{{ artwork.image }}"> 
-                    <div class="caption">
-                        <h3> {{ artwork.title }} </h3>
-                        <p> {{ artwork.artist }}  </p>
-                        <p> {{ artwork.date }} </p>
-                    </div>
+    <div class="row" ng-repeat="artwork in artworks.all">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="/images/{{ artwork.image }}"> 
+                <div class="caption">
+                    <h3> {{ artwork.title }} </h3>
+                    <p> {{ artwork.artist }} </p>
+                    <p> {{ artwork.date }} </p>
                 </div>
             </div>
         </div>
-    </div>
-            {{ artwork.title }} 
-            {{ artwork.artist }} 
-            <img src="/images/{{ artwork.image }}"> 
-            {{ artwork.size }} 
-            {{ artwork.description }} 
-            {{ artwork.date }} 
     </div>
 </section>

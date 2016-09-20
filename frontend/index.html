@@ -1,98 +1,97 @@
-  <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>The ArtBeat Collection</title>
 
-  <title>The ArtBeat Collection</title>
+        <!-- CSS LINKS -->
+        <link rel="stylesheet" href="/stylesheets/css/main.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="/stylesheets/fonts/Rafale-BG-webfontkit/stylesheet.css" type="text/css" charset="utf-8" />
+        <!--Pulling Awesome Font -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <!-- CSS LINKS -->
-  <link rel="stylesheet" href="/stylesheets/css/main.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="/stylesheets/fonts/Rafale-BG-webfontkit/stylesheet.css" type="text/css" charset="utf-8" />
-  <!--Pulling Awesome Font -->
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- JS/ANGULAR LINKS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.js"></script>
+        <script src="/js/vendor/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+        <script src="/js/vendor/angular-jwt/dist/angular-jwt.min.js"></script>
+        <script src="/js/vendor/moment/min/moment.min.js" charset="utf-8"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
+        <script src="js/app.js"></script>
+        <script src="js/models/user.js"></script>
+        <script src="js/controllers/users.js"></script>
+        <script src="js/controllers/artworksController.js"></script>
+        <script src="js/controllers/artistsController.js"></script>
+        <script src="js/services/token.js"></script>
+        <script src="js/services/authInterceptor.js"></script>
+        <script src="js/factories/artwork.js"></script>
+        <script src="js/directives/footer-directive.js"></script>
 
-  <!-- JS/ANGULAR LINKS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.js"></script>
-  <script src="/js/vendor/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
-  <script src="/js/vendor/moment/min/moment.min.js" charset="utf-8"></script>
-  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <!-- BOOTSTRAP -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <script src="js/app.js"></script>
-  <script src="js/controllers/artworksController.js"></script>
-  <script src="js/controllers/artistsController.js"></script>
-  <script src="js/factories/artwork.js"></script>
-  <script src="js/directives/footer-directive.js"></script>
+    </head>
 
+    <body ng-app="Artbeat">
+        <nav class="navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a ui-sref-active="active" ui-sref="lp" >
+                        <p>LOGO</p>
+                        <!-- <img class="navbar-brand" alt="Brand" src="/images/logoLarge.png"> -->
+                    </a>
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#navHeaderCollapse">
+                        <span class="sr-only">Toggle navigation</span>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id ="navHeaderCollapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a ui-sref-active="active" ui-sref="collection">Collection</a></li>
+                        <li><a ui-sref-active="active" ui-sref="artists">Artists</a></li>
+                        <li><a ui-sref-active="active" ui-sref="exhibition">Exhibition</a></li>
+                        <li><a ui-sref-active="active" ui-sref="founders">Founders</a></li>
+                        <li><a ui-sref-active="active" ui-sref="myAccount">My account</a></li>
+                        <li><a ui-sref-active="active" ui-sref="aboutUs">About us</a></li>
+                        <li><a ui-sref-active="active" ui-sref="login">Log in</a></li>
+                        <li><a ui-sref-active="active" ui-sref="register">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
+        <main ui-view></main>
 
-
-  <!-- BOOTSTRAP -->
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  
- 
-</head>
-<body ng-app="Artbeat">
-    <nav class="navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <a ui-sref-active="active" ui-sref="lp" >
-            <img class="navbar-brand" alt="Brand" src="/images/logoLarge.png">
-          </a>
-          <button class="navbar-toggle" data-toggle="collapse" data-target="#navHeaderCollapse">
-            <span class="sr-only">Toggle navigation</span>
-              <i class="icon-bar"></i>
-              <i class="icon-bar"></i>
-              <i class="icon-bar"></i>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id ="navHeaderCollapse">
-
-          <ul class="nav navbar-nav navbar-right">
-              <li><a ui-sref-active="active" ui-sref="collection">Collection</a></li>
-              <li><a ui-sref-active="active" ui-sref="artists">Artists</a></li>
-              <li><a ui-sref-active="active" ui-sref="exhibition">Exhibition</a></li>
-              <li><a ui-sref-active="active" ui-sref="founders">Founders</a></li>
-              <li><a ui-sref-active="active" ui-sref="myAccount">My account</a></li>
-              <li><a ui-sref-active="active" ui-sref="aboutUs">About us</a></li>
-              <li><a ui-sref-active="active" ui-sref="login">Log in</a></li>
-              <li><a ui-sref-active="active" ui-sref="register">Sign up</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-  <main ui-view>
-  </main>
-
-  <nav class="navbar-fixed-bottom footer" role="navigation">
-    <div class="row">
-      <ul class="nav navbar footerLink">
-        <li><a ui-sref-active="active" ui-sref="#">About</a></li>
-        <li><a ui-sref-active="active" ui-sref="#">Send your work</a></li>
-        <li><a ui-sref-active="active" ui-sref="#">How it works</a></li>
-        <li><a ui-sref-active="active" ui-sref="#">Contact us</a></li>
-        <li><a ui-sref-active="active" ui-sref="#">Terms</a></li>
-        <li><a ui-sref-active="active" ui-sref="#">Team</a></li>
-        <li><a ui-sref-active="active" ui-sref="#">Press</a></li>
-        <li><a ui-sref-active="active" ui-sref="#">FAQ</a></li>
-      </ul>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-         <ul class="social-network social-circle">
-            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-        </ul>       
-    </div>
-  </div>
-  </nav>
-</body>
+        <nav class="navbar-fixed-bottom footer" role="navigation">
+            <div class="row">
+                <ul class="nav navbar footerLink">
+                    <li><a ui-sref-active="active" ui-sref="#">About</a></li>
+                    <li><a ui-sref-active="active" ui-sref="#">Send your work</a></li>
+                    <li><a ui-sref-active="active" ui-sref="#">How it works</a></li>
+                    <li><a ui-sref-active="active" ui-sref="#">Contact us</a></li>
+                    <li><a ui-sref-active="active" ui-sref="#">Terms</a></li>
+                    <li><a ui-sref-active="active" ui-sref="#">Team</a></li>
+                    <li><a ui-sref-active="active" ui-sref="#">Press</a></li>
+                    <li><a ui-sref-active="active" ui-sref="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="social-network social-circle">
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>       
+                </div>
+            </div>
+        </nav>
+    </body>
 </html>

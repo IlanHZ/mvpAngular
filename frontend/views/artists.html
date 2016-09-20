@@ -1,25 +1,18 @@
 <section class="artists" ng-controller="ArtistsController as artists">
-  <div class="container">
- 
-    <div class="row">
-      <p class="artistsTitle sectionTitle col-md-12 col-xs-12">OUR ARTISTS</p>
-    </div>
-    <div class="artistPage">
-      <div class="artistBox col-md-8 col-xs-12 ">
-        <div class="artwork">
+    <div class="container artistPage">
+        <div class="row">
+            <p class="artistsTitle sectionTitle col-md-12 col-xs-12">OUR ARTISTS</p>
         </div>
-        <div class="picture"> 
+        <div class="artistPage" ng-repeat="artist in artists.all">
+            <div class="artistBox col-md-12 col-xs-12 ">
+                <div class="artwork">
+                    <img src="/images/{{artist.artwork}}">
+                </div>
+                <div class="picture"> 
+                    <img src="/images/{{ artist.image}}">
+                </div>
+                <p class="name">{{ artist.name }}</p>
+            </div>
         </div>
-        <p class="name">
-          Raphael Schwartz
-        </p>
-      </div>
-
     </div>
-
-    <div class="row" ng-repeat="artist in artists.all">
-      {{ artist.name }} 
-    </div>
-    
-  </div>
 </section>
