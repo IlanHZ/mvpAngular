@@ -1,13 +1,10 @@
 nav {
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: rgba(107, 135, 137, 0.4); }
   nav .navbar-nav li a {
-    line-height: 50px;
-    text-decoration: none;
-    color: #6b8789; }
-  nav .navbar-brand {
-    height: 80px;
-    width: 200px; }
-  nav .navbar-toggle .icon-bar {
+    color: white; }
+    nav .navbar-nav li a:hover {
+      background-color: none !important; }
+  nav .icon-bar {
     background-color: black; }
 
 .footer {
@@ -80,6 +77,27 @@ nav {
   .artitstsCarousel .carousel-inner .leftCarousel {
     width: 50%;
     position: absolute; }
+
+/* Artist Carousel */
+#artistsCarousel {
+  position: relative;
+  width: 100%; }
+  #artistsCarousel .imageContainer {
+    margin-top: 5%; }
+
+#artistsCarousel .item img {
+  display: inline-block;
+  width: 33%;
+  height: 300px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto; }
+
+.lpTitle {
+  font-size: 55px;
+  text-align: center;
+  color: #656868; }
 
 .footer {
   padding: 1rem;
@@ -208,13 +226,40 @@ nav {
   color: #231f20;
   margin-bottom: 0px; }
 
-.artistPage {
-  border-left: 10pc solid #fff101;
-  height: 100%; }
+.artistPage .artistBox {
+  position: relative;
+  height: 215px;
+  background-color: red;
+  margin-top: 10%; }
+  .artistPage .artistBox .picture {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    width: 20%;
+    height: 80%; }
+    .artistPage .artistBox .picture img {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+  .artistPage .artistBox .artwork {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    width: 30%;
+    height: 80%;
+    background-color: blue; }
+    .artistPage .artistBox .artwork img {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+  .artistPage .artistBox .name {
+    position: absolute;
+    font-size: 30px;
+    right: 2%;
+    top: 20%; }
+
+@media (max-width: 641px) {
   .artistPage .artistBox {
-    position: relative;
-    left: -75px;
-    top: 56px;
     height: 215px;
     background-color: red;
     margin-top: 10%; }
@@ -241,14 +286,17 @@ nav {
         height: 100%; }
     .artistPage .artistBox .name {
       position: absolute;
-      font-size: 30px;
+      font-size: 20px;
       right: 2%;
-      top: 20%; }
-
+      top: 20%; } }
 * {
   font-family: "rafalebg"; }
 
 .sectionTitle {
   margin-top: 10%; }
+
+.container {
+  padding-right: 0px !important;
+  padding-left: 0px !important; }
 
 /*# sourceMappingURL=main.css.map */

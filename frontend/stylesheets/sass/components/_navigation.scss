@@ -3,28 +3,38 @@
 // Navbar
 
 nav { 
-    background-color: rgba(255,255,255,0.9);  
+    background-color: rgba(107, 135, 137, 0.4);  
 
     .navbar-nav li a {
+        color: white;
 
-        line-height: 50px;
-        text-decoration: none;
-        color: $text-grey;
+        &:hover {
+            background-color: none !important;
+        }
 
     }
 
-    .navbar-brand {
-        height: 80px;
-        width: 200px;
-    }
 
-    .navbar-toggle {
+
+    // .navbar-brand {
+    //     height: 80px;
+    //     width: 200px;
+    // }
+
+    // .navbar-toggle {
 
         .icon-bar {
             background-color: black;
         }
-    }
+    // }
 }
+
+
+// @media (max-width: 992px) {
+//     nav {
+//         background-color: red;
+//     }
+// }
 
 // Footer
 

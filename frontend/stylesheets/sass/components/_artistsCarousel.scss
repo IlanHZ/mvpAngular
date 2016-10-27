@@ -1,0 +1,28 @@
+@import "../helpers/variables";
+
+
+/* Artist Carousel */
+#artistsCarousel {
+  position: relative;
+  width: 100%;
+
+    .imageContainer {
+        margin-top: 5%;
+  }
+}
+
+#artistsCarousel .item  img {
+  display: inline-block;
+  width: 33%;
+  height: 300px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lpTitle {
+    font-size: $l-font;
+    text-align: center;
+    color: $text-dark-grey;
+}

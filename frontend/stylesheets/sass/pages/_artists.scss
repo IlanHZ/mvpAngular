@@ -13,13 +13,13 @@
 
 
 .artistPage {
-    border-left: 10pc solid $primary-yellow;
-    height: 100%;
+    // border-left: 10pc solid $primary-yellow;
+    // height: 100%;
 
     .artistBox {
         position: relative;
-        left: -75px;
-        top: 56px;
+        // left: -235px;
+        // top: 56px;
         // width: 67%;
         height: 215px;
         background-color: red;
@@ -63,3 +63,59 @@
         }
     }
 }
+
+@media (max-width: $break-medium) {
+
+    .artistPage {
+        // border-left: 10pc solid $primary-yellow;
+        // height: 100%;
+
+        .artistBox {
+            height: 215px;
+            background-color: red;
+            margin-top: 10%;
+
+            .picture {
+                position: absolute;
+                top: 10%;
+                left: 40%;
+                width: 20%;
+                height: 80%;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+
+            }
+
+            .artwork {
+                position: absolute;
+                top: 10%;
+                left: 7%;
+                width: 30%;
+                height: 80%;
+                background-color: blue;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .name {
+                position: absolute;
+                font-size: $s-font;
+                right: 2%;
+                top: 20%;
+            }
+        }
+    }
+}
+
+
+
+
+

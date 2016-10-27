@@ -8,6 +8,10 @@ mongoose.connect(databaseURL);
 var Artwork = require("../models/artwork");
 var Artist    = require("../models/artist");
 
+
+Artist.collection.drop();
+Artwork.collection.drop();
+
 // Artists
 
 var artist1 = new Artist({

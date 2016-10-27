@@ -4,6 +4,7 @@
 // components
 @import "components/navigation";
 @import "components/carousel";
+@import "components/artistsCarousel";
 //helpers
 @import "helpers/variables";
 //layout
@@ -21,3 +22,9 @@
 .sectionTitle {
     margin-top: 10%;
 }
+
+.container {
+    padding-right: 0px!important; 
+    padding-left: 0px!important; 
+}
+

@@ -1,5 +1,6 @@
 angular
     .module('Artbeat', ['ngResource', 'ui.router', 'angular-jwt'])
+    .constant('API', 'http://localhost:3000')
     .config(function($httpProvider, $stateProvider, $urlRouterProvider){
 
       
@@ -47,9 +48,9 @@ angular
     });
 
 
-    // InterceptorConfig.$inject = ['$httpProvider'];
-    // function InterceptorConfig($httpProvider) {
-    //   // push it into the angular array
-    //   $httpProvider.interceptors.push('Artbeat')
-    // }
+    InterceptorConfig.$inject = ['$httpProvider'];
+    function InterceptorConfig($httpProvider) {
+      // push it into the angular array
+      $httpProvider.interceptors.push('Artbeat')
+    }
 
